@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> card </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="card " style="width: 19rem;">
+                        
+                        <div class="card-body" style="color: rgb(99, 26, 167);">
+                            <h5 class="card-title">nme</h5>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h6>Industry:</h6>
+                                    </td>
+                                    <td>
+                                        <h6> Consulting</h6>
+                                    </td>
+                                </tr>     
+                                <tr>
+                                    <td>
+                                        <h6>KPI Category:  </h6>
+                                    </td>
+                                    <td>   
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            sales
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="grid gap-0 column-gap-3"></div>
+                            <div class="p-1 g-col-3">MTD&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  YTD</div>
+                            <div class="p-1 g-col-3">Actual:0&emsp;&emsp;&emsp;&emsp;&emsp;Actual:0</div>
+                            <div class="p-1 g-col-3">Target:0&emsp;&emsp;&emsp;&emsp;&emsp;Target:0</div>
+                          
+                        
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                &#9999
+                              </button>
+                              <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">&#128065</button>
+
+                              <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&#x2764</button>
+
+                              <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">&#128337</button>
+                              <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#128100</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  ...
+                </div>
+              </div>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  ...
+                </div>
+              </div>
+
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                  ...
+                </div>
+              </div>
+
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>There are several reasons why you might want to use an off-canvas menu. You can display a secondary menu that sits to the side of your page. It can even act as the sole navigation panel for your website. 
+
+                    Off-canvas navigation also allows you to display quick links to specific areas of your site. Thanks to the off-canvas menu’s appealing structure, this may help your visitors more easily find what they are looking for and keep them on your site longer. 
+                    
+                    It’s also great for special offers or announcements. For example, an off-canvas menu allows you to showcase promotions without being overly disruptive or distracting. You can also highlight a featured product or service.
+                    
+                    In addition, there are many benefits of using an off-canvas panel: 
+                    
+                    Display an attractive vertical menu instead of the typical layout 
+                    Add extra content without resorting to a lengthy navigation bar 
+                    Highlight details and reference links easily 
+                    Place pop-up registration or subscription forms in a flyout 
+                    Showcase special offers and ongoing discounts 
+                    As you can see, there are a number of ways you can take advantage of this feature and improve user experience on your website.
+                    here are several reasons why you might want to use an off-canvas menu. You can display a secondary menu that sits to the side of your page. It can even act as the sole navigation panel for your website. 
+
+                    Off-canvas navigation also allows you to display quick links to specific areas of your site. Thanks to the off-canvas menus appealing structure, this may help your visitors more easily find what they are looking for and keep them on your site longer. 
+                    
+                    It’s also great for special offers or announcements. For example, an off-canvas menu allows you to showcase promotions without being overly disruptive or distracting. You can also highlight a featured product or service.
+                    
+                    In addition, there are many benefits of using an off-canvas panel: 
+                    
+                    Display an attractive vertical menu instead of the typical layout 
+                    Add extra content without resorting to a lengthy navigation bar 
+                    Highlight details and reference links easily 
+                    Place pop-up registration or subscription forms in a flyout 
+                    Showcase special offers and ongoing discounts 
+                    As you can see, there are a number of ways you can take advantage of this feature and improve user experience on your website.</p>
+                </div>
+              </div>
+            
+
+       
+
+
+
+
+    </body>
+</html>

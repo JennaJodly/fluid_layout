@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="background-color: rgb(103, 183, 245);">
+        <table width="40%" bgcolor="white" style="margin:auto;border-radius:6px;padding:10px;border-style: solid;border-color: rgb(40, 44, 168);border-width:6px">
+            <tr>
+                <td>
+                    <h1>Flight Reservation</h1>
+                    <h3 style="color:rgb(241, 67, 67)">
+                        Please make sure that you fill in the name which is in your passport.
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px">
+                    <form>
+                        <label >Contact Person</label><br>
+                    <input type="text" style="width:30%;height:30px;background-color:rgb(219, 222, 236);border-radius:2px" name="name" placeholder="First Name" >
+                    <input type="text" style="width:30%;height:30px;background-color:rgb(219, 222, 236);border-radius:2px" name="name" placeholder="Last Name"  >
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:20px">
+                    <form>
+                    <label > Email</label><br>
+                    <input type="email"  style="width:60%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px" name="mail" placeholder="ex:myname@gmail.com" >
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px">
+                    <form>
+                        <label > Phone Number</label><br>
+                    <input type="text"  style="width:15%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px" name="phn" placeholder="Area Code"  >
+                    <input type="text"  style="width:45%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px" name="phn" placeholder="Phone Number"  >
+                    </form>
+                  
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px">
+                    <form>
+                        <label > Address</label><br>
+                      <textarea style="width:97%;background-color:rgb(219, 222, 236);border-radius:4px" name="content" rows="5" cols="50"></textarea>
+                   </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px">
+                    <h3>International or domestic Flight?</h3>
+                    <form>
+                        <input type="checkbox"  name="yes" value="ref" >
+                        International
+                     </form>
+                     <form>
+                        <input type="checkbox"  name="no" value="ref2" >
+                        Domestic
+                     </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:20px" >
+                    <form>
+                        <label > Passport/ID Number</label><br>
+                        <input type="text"  style="width:60%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px" name="id" disabled >
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:20px" >
+                    <form>
+                        <label > Departure Date & Time</label><br>
+                        <input type="date" name="date" style="width:50%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px"  >
+                        <input type="time" name="time"  style="width:10%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px"  >
+                        <select style=" background-color:rgb(219, 222, 236);width:10%;height:30px;border-radius:5px" name="dropdown">
+                            <option  value="am">AM</option>
+                            <option value="pm">PM </option>
+                        </select>
+
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding:20px">
+                    <form>
+                        <label> Return Date & Time</label><br>
+                        <input type="date" name="date" style="width:50%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px"  >
+                        <input type="time" name="time"  style="width:10%;height:30px;background-color:rgb(219, 222, 236);border-radius:4px"  >
+                        <select style=" background-color:rgb(219, 222, 236);width:10%;height:30px;border-radius:5px" name="dropdown">
+                            <option  value="am">AM</option>
+                            <option value="pm">PM </option>
+                        </select>
+
+                    </form>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" align="center"  style="padding:10px">
+                    <form>
+                        <input type="submit"  style="width:15%;color:white;height:30px;background-color:rgb(77, 64, 250);border-radius:4px;border-color:brown" name="submit"  >
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
